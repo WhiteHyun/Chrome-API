@@ -2,10 +2,10 @@
 const clockContainer = document.querySelector(".clock");
 const clockTitle = clockContainer.querySelector(".title");
 
+/**
+ * Get the current time and show it in HTML.
+ */
 function getTime() {
-  /**
-   * Get the current time and show it in HTML.
-   */
   const date = new Date();
   let minutes = date.getMinutes();
   let hours = date.getHours();
