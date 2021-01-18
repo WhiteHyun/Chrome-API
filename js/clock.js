@@ -1,11 +1,11 @@
-"use strict";
-const clockContainer = document.querySelector(".clock");
-const clockTitle = clockContainer.querySelector(".title");
+'use strict';
+const clockContainer = document.querySelector('.clock');
+const clockTitle = clockContainer.querySelector('.title');
 
 /**
  * Get the current time and show it in HTML.
  */
-function getTime() {
+export function getTime() {
   const date = new Date();
   let minutes = date.getMinutes();
   let hours = date.getHours();
@@ -17,6 +17,6 @@ function getTime() {
 }
 
 // Run getTime function every second to update clocks.
-(() => {
-  setInterval(getTime, 1000);
-})();
+// (() => {
+//   setInterval(getTime, 1000);
+// })();
